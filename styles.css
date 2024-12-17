@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+  }
+  body{
+    display: flex;
+    background-color: #f4f5f7;
+  }
+
+  .logo{
+    width: 150px;
+    height: 100px;
+    background-color: #283172;
+    padding-left: 1em ;
+  
+    
+  }
+
+  /* SideBar */
+  .sidebar{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 180px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+  .menu{
+    flex-grow: 1;
+  }
+    .menu ul {
+    list-style: none;
+  }
+  
+  .menu li {
+    padding: 0.8rem 0;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .menu li:hover {
+    background-color: #404255;
+    border-radius: 5px;
+  }
+  .menu li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+.logout-section{
+ 
+    margin-top: auto;
+}
+.logout {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0rem; 
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+.icon-spacing{
+    margin-right: 8px;
+}
+  /* Main Content */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Topbar */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    margin-top: 2em;
+    /* width: 100%; */
+
+  }
+  
+  .search-box {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 5px 10px; 
+    margin:auto;
+    
+  }
+  
+  .search-box input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 240px;
+  
+  }
+  
+  .search-icon {
+    cursor: pointer;
+    display: flex;
+    margin-right: 0.5rem;
+  }
+  .right-side {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.notification-icon ion-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+  
+  /* Profile Section */
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  #initials-circle {
+    width: 40px;
+    height: 40px;
+    background-color:lightgray;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name {
+     font-size: 0.8rem
+  }
+  
+  .role {
+    font-size: 0.7em;
+    color: #777;
+  }
+  
+  /* Dashboard Content */
+  .dashboard {
+    padding: 20px;
+  }
+  .dashboard h1{
+    font-size: 1.5rem;
+  }
+
+  /* Metrics Header */
+.metrics-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Responsive for small screens */
+}
+
+.metric-card {
+    flex: 1; 
+    background-color: lightgray;
+    padding: 20px 6px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.metric-card p {
+    font-size: 1em;
+    font-weight: 500;
+    color: #444;
+    text-align: left;
+}
+
+.metric-card:hover {
+    background-color: #6a6e72;
+    transform: scale(1.05);
+}
+
+/* Active State */
+.metric-card.active {
+    background-color: #283172;; 
+    color: #ffffff;
+}
+
+.metric-card.active p {
+    color: #ffffff;
+}
+
+ /* Table section */
+
+ .table-container{
+    /* overflow-x: auto; */
+    padding: 20px;
+  
+ }
+ table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius:6px ;
+
+ }
+ th{
+       background-color: lightgray; 
+ }
+ th, td{
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+ }
+ * Action Column */
+.action-icon {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Button Styles */
+button {
+  padding: 5px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+button.chat {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.view {
+  background-color: #008CBA;
+  color: white;
+}
+
+/* button.editcenter. .
+  .delete { background-color: #dc3545; color: white; } */
