@@ -23,11 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 
 // Action Coloumn
-
-// Function to toggle the visibility of the action buttons
-function toggleActions(iconElement) {
-    
-    const actionButtons = iconElement.nextElementSibling;
-    actionButtons.classList.toggle("hidden");
-  }
-  
+      document.addEventListener("DOMContentLoaded", () => {
+        const tableBody = document.querySelector("tbody");
+      
+        tableBody.addEventListener("click", (event) => {
+        
+          if (event.target.classList.contains("action-icon")) {
+            const parentRow = event.target.closest("tr");
+            const actionButtons = parentRow.querySelector(".action-buttons")
+            actionButtons.classList.toggle("hidden");
+          }
+        });
+      });
+      
